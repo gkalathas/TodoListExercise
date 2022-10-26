@@ -76,4 +76,7 @@ public class Data {
             }
         }
     }
+    public void deleteTodoItem(TodoItem item){
+        todoItems.remove(item);
+    }
 }

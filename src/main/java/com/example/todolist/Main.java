@@ -8,12 +8,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws  Exception{
-        Parent root= FXMLLoader.load(getClass().getResource("mainwindow.fxml"));
+        Parent root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("mainwindow.fxml")));
         stage.setTitle("Todo List");
         stage.setScene(new Scene(root, 900, 500));
         stage.show();
